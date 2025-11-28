@@ -1,4 +1,4 @@
-# Contribuyendo al AI Art Chatbot
+# Contribuyendo al AI Chatbot
 
 ¡Gracias por tu interés en contribuir a este proyecto! Este documento establece las pautas para contribuir al código y la documentación.
 
