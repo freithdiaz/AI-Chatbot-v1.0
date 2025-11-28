@@ -1,4 +1,4 @@
-# 🎨 AI Art Chatbot
+# 🎨 AI Chatbot
 
 > Un asistente inteligente experto en arte, potenciado por embeddings y búsqueda semántica.
 
