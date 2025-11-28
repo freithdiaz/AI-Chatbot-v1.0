@@ -1,8 +1,8 @@
 # 🎨 AI Chatbot
 
-> Un asistente inteligente experto en arte, potenciado por embeddings y búsqueda semántica.
+> Un asistente inteligente para preguntas generales sobre los procesos de la empresa, potenciado por embeddings y búsqueda semántica.
 
-Este proyecto implementa un chatbot capaz de responder preguntas sobre arte y pintura utilizando un modelo de lenguaje (Sentence Transformers) para entender el contexto y la semántica de las preguntas del usuario, ofreciendo respuestas precisas desde un dataset curado.
+Este proyecto implementa un chatbot capaz de responder preguntas sobre la empresa sobre la que se entrena ayudando con las capacitaciones generales de la empresa por ejemplo como se realiza un proceso especifico y si tengo error que haria etc. se realiza con (Sentence Transformers) para entender el contexto y la semántica de las preguntas del usuario, ofreciendo respuestas precisas desde un dataset curado.
 
 ## ✨ Características
 
