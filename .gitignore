@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask
+instance/
+.webassets-cache
+
+# Project specific
+uploads/
+legacy/
+.gemini/
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/

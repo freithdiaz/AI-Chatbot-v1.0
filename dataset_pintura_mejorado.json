@@ -1,0 +1,792 @@
+[
+  {
+    "category": "introduccion",
+    "question": "¿Qué es el Sistema Automatizado de Pintura?",
+    "answer": "Es una solución integral para controlar automáticamente el proceso de pintado, utilizando válvulas, motores y mecanismos para aplicar pintura negra o transparente a distintos modelos de productos. El sistema está compuesto por un servidor Flask, un módulo ESP8266 para comunicación WiFi, y un Arduino Nano para control de hardware."
+  },
+  {
+    "category": "cortesia",
+    "question": "hola",
+    "answer": "Hola, soy ECO, tu asistente virtual especializado en el sistema de pintura automatizada. Estoy aquí para ayudarte con cualquier duda sobre el funcionamiento, mantenimiento o solución de problemas del sistema. ¿En qué puedo ayudarte hoy?"
+  },
+  {
+    "category": "cortesia",
+    "question": "¿cómo estás?",
+    "answer": "¡Estoy funcionando al 100%! Listo para ayudarte con el sistema de pintura."
+  },
+  {
+    "category": "cortesia",
+    "question": "gracias",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "muchas gracias",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "te lo agradezco",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "grax",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "adios",
+    "answer": "¡Hasta luego! Si necesitas más ayuda con el sistema de pintura, no dudes en preguntar. Recuerda seguir los procedimientos de seguridad y mantenimiento para un óptimo funcionamiento del sistema."
+  },
+  {
+    "category": "modelos",
+    "question": "Dime qué equipos son compatibles con el sistema de pintura",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "Necesito saber qué artículos puedo pintar aquí",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "materiales",
+    "question": "¿Qué tipos de pintura se utilizan en el sistema?",
+    "answer": "El sistema utiliza dos tipos principales de pintura:\n1. Pintura negra: Se utiliza para el maquillaje inicial de los productos\n2. Pintura transparente: Se aplica como acabado final para dar brillo y protección\nAmbas pinturas son específicas para el sistema y deben ser manejadas con cuidado, siguiendo los procedimientos de seguridad establecidos."
+  },
+  {
+    "category": "procedimientos",
+    "question": "¿Cuál es el proceso completo de pintado?",
+    "answer": "El proceso de pintado consta de los siguientes pasos:\n1. Selección del modelo a pintar (Kaon, Opentel, Arris, LH)\n2. Inicio del sistema desde la interfaz web\n3. Aplicación de pintura negra para maquillaje\n4. Aplicación de pintura transparente para acabado final\n5. Tiempo de secado (aproximadamente 5 minutos)\n6. Verificación del acabado\nEl proceso completo dura aproximadamente 10 minutos, incluyendo el tiempo de secado."
+  },
+  {
+    "category": "modelos",
+    "question": "¿Qué modelos se pueden pintar en el sistema?",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "hardware",
+    "question": "¿Qué componentes principales conforman el sistema?",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "software",
+    "question": "¿Qué tecnologías de software utiliza el sistema?",
+    "answer": "El sistema utiliza:\n1. Python con Flask para el backend\n2. HTML/CSS/JavaScript para la interfaz web\n3. Firmware personalizado para Arduino Nano\n4. Protocolos de comunicación:\n   - HTTP para la interfaz web\n   - WebSocket para estados en tiempo real\n   - Comunicación serial para Arduino"
+  },
+  {
+    "category": "operacion",
+    "question": "¿Cómo se inicia el sistema correctamente?",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "modos",
+    "question": "¿Qué modos de operación tiene el sistema?",
+    "answer": "El sistema tiene tres modos de operación:\n1. Modo Básico:\n   - Inicio y parada automática\n   - Selección de modelo\n   - Proceso completo automático\n2. Modo Avanzado:\n   - Control manual de componentes\n   - Ajuste de parámetros\n   - Pruebas individuales\n3. Modo Test:\n   - Pruebas rápidas de 5 segundos\n   - Verificación de componentes\n   - Diagnóstico del sistema"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "¿Qué mantenimiento diario requiere el sistema?",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "seguridad",
+    "question": "¿Qué medidas de seguridad se deben seguir?",
+    "answer": "Medidas de seguridad importantes:\n1. Usar equipo de protección personal (guantes, gafas)\n2. Mantener el área ventilada\n3. No manipular componentes eléctricos en funcionamiento\n4. Seguir procedimientos de apagado de emergencia\n5. Mantener extintores accesibles\n6. No comer o beber en el área de trabajo\n7. Reportar cualquier anomalía inmediatamente"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "¿Qué hacer si el sistema no responde?",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "calibracion",
+    "question": "¿Cómo se calibra la pistola de pintura?",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el primer modelo?",
+    "answer": "El primer modelo es el Kaon Equipos. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el segundo?",
+    "answer": "El segundo modelo es el Opentel Equipo. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el tercero?",
+    "answer": "El tercer modelo es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el cuarto modelo?",
+    "answer": "El cuarto modelo es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el quinto?",
+    "answer": "El quinto modelo es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el último modelo?",
+    "answer": "El último modelo es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el modelo número 1?",
+    "answer": "El modelo número 1 es el Kaon Equipos. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el modelo 2?",
+    "answer": "El modelo 2 es el Opentel Equipo. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el modelo 3?",
+    "answer": "El modelo 3 es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el modelo 4?",
+    "answer": "El modelo 4 es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el modelo 5?",
+    "answer": "El modelo 5 es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el modelo 6?",
+    "answer": "El modelo 6 es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el primer equipo?",
+    "answer": "El primer equipo es el Kaon Equipos. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el segundo equipo?",
+    "answer": "El segundo equipo es el Opentel Equipo. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el tercer equipo?",
+    "answer": "El tercer equipo es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el cuarto equipo?",
+    "answer": "El cuarto equipo es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el quinto equipo?",
+    "answer": "El quinto equipo es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el último equipo?",
+    "answer": "El último equipo es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el equipo número 1?",
+    "answer": "El equipo número 1 es el Kaon Equipos. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el equipo 2?",
+    "answer": "El equipo 2 es el Opentel Equipo. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el equipo 3?",
+    "answer": "El equipo 3 es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el equipo 4?",
+    "answer": "El equipo 4 es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el equipo 5?",
+    "answer": "El equipo 5 es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el equipo 6?",
+    "answer": "El equipo 6 es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el primer carcasa?",
+    "answer": "El primer carcasa es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el segundo carcasa?",
+    "answer": "El segundo carcasa es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el tercer carcasa?",
+    "answer": "El tercer carcasa es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el último carcasa?",
+    "answer": "El último carcasa es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el carcasa número 1?",
+    "answer": "El carcasa número 1 es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el carcasa 2?",
+    "answer": "El carcasa 2 es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el carcasa 3?",
+    "answer": "El carcasa 3 es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el carcasa 4?",
+    "answer": "El carcasa 4 es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el primer carcasa?",
+    "answer": "El primer carcasa es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el segundo carcasa?",
+    "answer": "El segundo carcasa es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el tercer carcasa?",
+    "answer": "El tercer carcasa es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el último carcasa?",
+    "answer": "El último carcasa es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cómo se pinta el carcasa número 1?",
+    "answer": "El carcasa número 1 es el Kaon Carcasa. Su proceso de pintado es:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el carcasa 2?",
+    "answer": "El carcasa 2 es el Opentel Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Cuál es el carcasa 3?",
+    "answer": "El carcasa 3 es el Arris Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "¿Y el carcasa 4?",
+    "answer": "El carcasa 4 es el LH Carcasa. Su proceso de pintado es:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "empresa",
+    "question": "¿Quién desarrolló el sistema de pintura?",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "introduccion",
+    "question": "Explícame qué hace el sistema de pintura",
+    "answer": "Es una solución integral para controlar automáticamente el proceso de pintado, utilizando válvulas, motores y mecanismos para aplicar pintura negra o transparente a distintos modelos de productos. El sistema está compuesto por un servidor Flask, un módulo ESP8266 para comunicación WiFi, y un Arduino Nano para control de hardware."
+  },
+  {
+    "category": "introduccion",
+    "question": "Qué es la máquina de pintura",
+    "answer": "Es una solución integral para controlar automáticamente el proceso de pintado, utilizando válvulas, motores y mecanismos para aplicar pintura negra o transparente a distintos modelos de productos. El sistema está compuesto por un servidor Flask, un módulo ESP8266 para comunicación WiFi, y un Arduino Nano para control de hardware."
+  },
+  {
+    "category": "modelos",
+    "question": "Qué puedo pintar con el sistema de la maquina",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "Cuáles son los modelos disponibles",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "Qué equipos puedo pintar",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "Dime los modelos que soporta",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "Como pinto un Kaon",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Proceso para pintar Kaon",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Pasos para pintar un Kaon",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como debo pintar Kaon",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como pinto un Opentel",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Proceso para pintar Opentel",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Pasos para pintar un Opentel",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como debo pintar Opentel",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "El sistema no funciona",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "La máquina no enciende",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "Tengo problemas con el sistema",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "No responde el sistema",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "introduccion",
+    "question": "a que se dedica ecoservicio",
+    "answer": "Ecoservicio es una empresa de soluciones tecnologicas, en la actualidad tiene clientes como tigo y directv a los cuales se les realiza el proceso de reacondicionado de equipos puede ser modem y decodificadores"
+  },
+  {
+    "category": "tutorial",
+    "question": "video explicativo de la interfaz",
+    "answer": "Aquí tienes un video explicativo:<br><video src='/static/interfaz.mp4' controls width='400'></video>"
+  },
+  {
+    "category": "tutorial",
+    "question": "dame un video explicativo",
+    "answer": "Aquí tienes un video explicativo:<br><video src='/static/interfaz.mp4' controls width='400'></video>"
+  },
+  {
+    "category": "tutorial",
+    "question": "quiero ver un video explicativo",
+    "answer": "Aquí tienes un video explicativo:<br><video src='/static/interfaz.mp4' controls width='400'></video>"
+  },
+  {
+    "category": "tutorial",
+    "question": "muestrame un video explicativo",
+    "answer": "Aquí tienes un video explicativo:<br><video src='/static/interfaz.mp4' controls width='400'></video>"
+  },
+  {
+    "category": "introduccion",
+    "question": "sistema de pintura que es",
+    "answer": "Es una solución integral para controlar automáticamente el proceso de pintado, utilizando válvulas, motores y mecanismos para aplicar pintura negra o transparente a distintos modelos de productos. El sistema está compuesto por un servidor Flask, un módulo ESP8266 para comunicación WiFi, y un Arduino Nano para control de hardware."
+  },
+  {
+    "category": "modelos",
+    "question": "modelos compatibles con el sistema",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "lista de equipos para pintar",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "que carcasas puedo pintar",
+    "answer": "El sistema puede pintar los siguientes modelos:\n1. Kaon Equipos\n2. Opentel Equipo\n3. Kaon Carcasa\n4. Opentel Carcasa\n5. Arris Carcasa\n6. LH Carcasa\nCada modelo tiene su propia configuración de pintura y tiempo de proceso."
+  },
+  {
+    "category": "modelos",
+    "question": "pintura de equipos kaon",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "instrucciones para kaon",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "kaon procedimiento de pintura",
+    "answer": "Proceso de pintado para modelo Kaon:\n1. Aplicar pintura transparente inicial\n2. Aplicar pintura negra para maquillaje\n3. Aplicar pintura transparente final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "opentel como se pinta",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "pintura de equipo opentel",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "procedimiento opentel",
+    "answer": "Proceso de pintado para modelo Opentel:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como pinto un Arris",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Proceso para pintar Arris",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Pasos para pintar un Arris",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como debo pintar Arris",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Arris carcasa pintura",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "pintar un arris",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "método para pintar arris",
+    "answer": "Proceso de pintado para modelo Arris:\n1. Aplicar pintura negra para maquillaje\n2. Tener especial cuidado con los LEDs\n3. Aplicar pintura transparente para acabado final\n4. Tiempo de secado: 5 minutos\n5. Verificar acabado uniforme\n6. Inspeccionar áreas críticas\n7. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como pinto un LH",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Proceso para pintar LH",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Pasos para pintar un LH",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "Como debo pintar LH",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "lh carcasa pintura",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "pintado de lh",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "modelos",
+    "question": "método para pintar lh",
+    "answer": "Proceso de pintado para modelo LH:\n1. Aplicar pintura negra para maquillaje\n2. Aplicar pintura transparente para acabado final\n3. Tiempo de secado: 5 minutos\n4. Verificar acabado uniforme\n5. Inspeccionar áreas críticas\n6. Documentar el proceso"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "Error en el sistema",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "sistema congelado",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "solucion_problemas",
+    "question": "fallas en el sistema de pintura",
+    "answer": "Pasos para solucionar problemas:\n1. Verificar conexiones eléctricas\n2. Comprobar alimentación del sistema\n3. Reiniciar el servidor Flask\n4. Verificar estado del ESP8266\n5. Comprobar conexión WiFi\n6. Revisar logs del sistema\n7. Si persiste el problema, contactar al soporte técnico"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "Como mantener el sistema",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "Mantenimiento de la máquina",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "Limpieza del sistema",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "Cuidados diarios",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "revisar el sistema",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "cómo limpiar la máquina",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "mantenimiento",
+    "question": "mantenimiento rutinario",
+    "answer": "El mantenimiento diario incluye:\n1. Limpieza de pistolas con thinner\n2. Verificación de niveles de pintura\n3. Comprobación de conexiones eléctricas\n4. Limpieza de componentes móviles\n5. Verificación de presión de aire\n6. Inspección visual de válvulas y motores\n7. Limpieza del área de trabajo"
+  },
+  {
+    "category": "calibracion",
+    "question": "Calibrar pistola",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "calibracion",
+    "question": "Ajustar pistola de pintura",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "calibracion",
+    "question": "Como configurar la pistola",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "calibracion",
+    "question": "Pasos para calibrar",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "calibracion",
+    "question": "ajuste de pistola",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "calibracion",
+    "question": "regular pistola de pintura",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "calibracion",
+    "question": "configuración de pistola",
+    "answer": "Proceso de calibración de pistolas:\n1. Ajustar el paso de pintura (válvula posterior)\n2. Regular el abanico (arriba/abajo)\n3. Ajustar la presión de aire desde la marma\n4. Realizar pruebas de pulverización\n5. Verificar patrón de pintura\n6. Ajustar según sea necesario\n7. Documentar los ajustes realizados"
+  },
+  {
+    "category": "hardware",
+    "question": "Partes del sistema",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "hardware",
+    "question": "De qué está hecho el sistema",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "hardware",
+    "question": "Elementos del sistema",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "hardware",
+    "question": "Componentes de la máquina",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "hardware",
+    "question": "piezas del sistema",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "hardware",
+    "question": "hardware del sistema",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "hardware",
+    "question": "qué tiene el sistema",
+    "answer": "El sistema está compuesto por:\n1. Arduino Nano: Control principal de hardware\n2. ESP8266: Módulo WiFi para comunicación\n3. Servidor Flask: Backend de la aplicación\n4. Interfaz web: Panel de control\n5. Válvulas: Control de flujo de pintura\n6. Motores: Movimiento de componentes\n7. Pistolas de pintura: Aplicación de pintura\n8. Relés: Control de potencia"
+  },
+  {
+    "category": "operacion",
+    "question": "Como encender el sistema",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "operacion",
+    "question": "Pasos para iniciar",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "operacion",
+    "question": "Como arrancar el sistema",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "operacion",
+    "question": "Procedimiento de inicio",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "operacion",
+    "question": "como prendo el sistema",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "operacion",
+    "question": "iniciar la máquina",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "operacion",
+    "question": "encendido del sistema",
+    "answer": "Para iniciar el sistema correctamente:\n1. Verificar que el servidor Flask esté ejecutándose\n2. Comprobar que el ESP8266 esté alimentado y conectado\n3. Subir los breakers del tablero eléctrico\n4. Acceder a la interfaz web en http://192.168.0.140:7000/pintura\n5. Seleccionar el modelo a pintar\n6. Iniciar el sistema desde la interfaz"
+  },
+  {
+    "category": "empresa",
+    "question": "Quién hizo el sistema",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "empresa",
+    "question": "Creadores del sistema",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "empresa",
+    "question": "Empresa que desarrolló",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "empresa",
+    "question": "Quién diseñó la máquina",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "empresa",
+    "question": "quien programó el sistema",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "empresa",
+    "question": "autores del sistema",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "empresa",
+    "question": "empresa responsable",
+    "answer": "El sistema fue desarrollado por la empresa Ecoservicio, especializada en soluciones tecnológicas. Los ingenieros responsables del desarrollo fueron:\n1. Camilo Suaza\n2. Jhoel Diaz\nEl sistema fue diseñado específicamente para optimizar el proceso de pintado de productos electrónicos."
+  },
+  {
+    "category": "hardware",
+    "question": "Diagrama de conexión Arduino en formato técnico",
+    "answer": "```\n+---------------------------------------------+\n|              Fuente 5V DC                   |\n+------------------+--------------------------+\n                   |\n                   v\n          +--------+--------+\n          |    Arduino     |\n          |     Nano       |\n          +----------------+\n         | D2 → Relé PISTOLAS_BAJAN\n         | D3 → Relé PISTOLAS_SUBEN\n         [...]\n```"
+  },
+  {
+    "category": "nuevo",
+    "question": "Gracias",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "gracias",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "muchas gracias",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "te lo agradezco",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "grax",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "grasias",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "grasia",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "te lo agradesco",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "cortesia",
+    "question": "agradecer",
+    "answer": "¡De nada! Si tienes más preguntas, estaré aquí."
+  },
+  {
+    "category": "nuevo",
+    "question": "jrwiojewiwe",
+    "answer": "2552f5"
+  }
+]

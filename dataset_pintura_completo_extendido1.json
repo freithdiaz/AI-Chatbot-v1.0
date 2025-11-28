@@ -1,0 +1,398 @@
+[
+  {
+    "question": "¿Qué es el Sistema Automatizado de Pintura?",
+    "answer": "Es una solución para controlar automáticamente el proceso de pintado, usando válvulas, motores y mecanismos para aplicar pintura negra o transparente a distintos modelos de productos."
+  },
+  {
+    "question": "hola",
+    "answer": "Hola, soy un chat creado para despejarte dudas puntuales sobre la maquina de pintura automatizada. ¡Estoy aquí para ayudarte!, por favor, hazme preguntas específicas sobre el sistema."
+  },
+  {
+    "question": "¿Qué es la pintura negra?",
+    "answer": "Es un tipo de pintura utilizada en el sistema para aplicar un acabado"
+  },
+  {
+    "question": "¿Qué es la pintura transparente?",
+    "answer": "Es un tipo de pintura utilizada en el sistema para aplicar un acabado transparente."
+  },
+  {
+    "question": "¿Qué es el proceso de pintado?",
+    "answer": "Es el conjunto de pasos y acciones necesarias para aplicar pintura a un producto."
+  },
+  {
+    "question": "¿Cuales son los modelos disponibles para pintar?",
+    "answer": "Kaon Equipos, Opentel Equipo, Kaon Carcasa, Opentel Carcasa, Arris Carcasa y LH Carcasa."
+  },
+  {
+    "question": "¿Cuanto tiempo demora el sistema de pintura?",
+    "answer": "El sistema de pintura demora 5 minutos entre las fases de pintura tranparente y pintura negra hasta lograr el mejor acabado."
+  },
+  {
+    "question": "¿Que es la maquina de pintura?",
+    "answer": "Es una solución para controlar automáticamente el proceso de pintado, usando válvulas, motores y mecanismos para aplicar pintura negra o transparente a distintos modelos de productos."
+  },
+  {
+    "question": "¿Qué es el sistema de pintura?",
+    "answer": "Un sistema automatizado que controla el proceso de pintado de productos mediante un servidor Flask y un módulo ESP8266."
+  },
+  {
+    "question": "¿Qué hace el sistema de pintura?",
+    "answer": "Controla automáticamente el proceso de pintado, permitiendo seleccionar modelos y gestionar válvulas y motores."
+  },
+  {
+    "question": "¿Cómo se controla el sistema?",
+    "answer": "A través de una interfaz web que se conecta al servidor Flask en el ESP8266."
+  },
+  {
+    "question": "¿Qué lenguajes se utilizan en el sistema?",
+    "answer": "Python para el backend (Flask) y HTML/CSS/JavaScript para la interfaz web."
+  },
+  {
+    "question": "¿Qué es Flask?",
+    "answer": "Un microframework de Python para crear aplicaciones web."
+  },
+  {
+    "question": "¿Qué es ESP8266?",
+    "answer": "Un módulo WiFi que permite la comunicación entre el servidor y la interfaz web."
+  },
+  {
+    "question": "¿Qué es Arduino Nano?",
+    "answer": "Una placa de microcontrolador utilizada para controlar los componentes del sistema."
+  },
+  {
+    "question": "¿Qué es un servidor Flask?",
+    "answer": "Es un servidor web que ejecuta aplicaciones Flask, permitiendo la comunicación entre el ESP8266 y la interfaz web."
+  },
+  {
+    "question": "¿Qué es una interfaz web?",
+    "answer": "Es una aplicación accesible desde un navegador que permite interactuar con el sistema de pintura."
+  },
+  {
+    "question": "¿Qué es un módulo WiFi?",
+    "answer": "Un dispositivo que permite la conexión a redes inalámbricas, como el ESP8266."
+  },
+  {
+    "question": "¿Qué es un microcontrolador?",
+    "answer": "Un pequeño ordenador en un solo chip que controla dispositivos electrónicos, como el Arduino Nano."
+  },
+  {
+    "question": "¿Qué es un relé?",
+    "answer": "Un interruptor controlado eléctricamente que permite encender o apagar dispositivos de alta potencia."
+  },
+  {
+    "question": "¿Qué es una válvula?",
+    "answer": "Un dispositivo que regula el flujo de líquidos o gases, utilizado en el sistema para controlar la pintura."
+  },
+  {
+    "question": "¿Qué es una pistola de pintura?",
+    "answer": "Un dispositivo que pulveriza pintura sobre los productos a pintar."
+  },
+  {
+    "question": "¿Qué es un motor?",
+    "answer": "Un dispositivo que convierte energía eléctrica en movimiento mecánico, utilizado para mover componentes del sistema."
+  },
+  {
+    "question": "¿Qué es un servidor?",
+    "answer": "Un ordenador o programa que proporciona servicios a otros programas o dispositivos, como el servidor Flask."
+  },
+  {
+    "question": "¿Qué es una red WiFi?",
+    "answer": "Una red de comunicación inalámbrica que permite la conexión entre dispositivos."
+  },
+  {
+    "question": "¿Qué es un endpoint?",
+    "answer": "Una URL específica en una API donde se pueden enviar solicitudes para realizar acciones."
+  },
+  {
+    "question": "¿Qué es un método GET?",
+    "answer": "Un tipo de solicitud HTTP que se utiliza para obtener datos de un servidor."
+  },
+  {
+    "question": "¿Qué es un método POST?",
+    "answer": "Un tipo de solicitud HTTP que se utiliza para enviar datos a un servidor."
+  },
+  {
+    "question": "¿Qué es un comando?",
+    "answer": "Una instrucción enviada al sistema para realizar una acción específica."
+  },
+  {
+    "question": "¿Qué es un estado?",
+    "answer": "La condición actual de un componente del sistema, como motor, válvulas o pistolas."
+  },
+  {
+    "question": "¿Qué es un modelo?",
+    "answer": "Una configuración específica del sistema que define cómo se pintará un producto. entre los modelos disponibles están: Kaon Equipos, Opentel Equipo, Kaon Carcasa, Opentel Carcasa, Arris Carcasa y LH Carcasa."
+  },
+  {
+    "question": "¿Qué es un mecanismo?",
+    "answer": "Un conjunto de partes móviles que realizan una función específica en el sistema."
+  },
+  {
+    "question": "¿Qué es un firmware?",
+    "answer": "El software que controla el hardware de un dispositivo, como el Arduino Nano."
+  },
+  {
+    "question": "¿Qué es una actualización de firmware?",
+    "answer": "El proceso de cargar una nueva versión del software en un dispositivo."
+  },
+  {
+    "question": "¿Qué es una conexión eléctrica?",
+    "answer": "Un enlace físico entre componentes eléctricos que permite la transferencia de energía."
+  },
+  {
+    "question": "¿Qué es una alimentación eléctrica?",
+    "answer": "La fuente de energía que alimenta los componentes del sistema."
+  },
+  {
+    "question": "¿Qué es un navegador web?",
+    "answer": "Un programa que permite acceder a páginas web y aplicaciones en línea."
+  },
+  {
+    "question": "¿Qué componentes conforman el sistema?",
+    "answer": "Arduino Nano (control principal), ESP8266 (WiFi), servidor Flask (backend), interfaz web (control)."
+  },
+  {
+    "question": "¿Qué se necesita para encender el sistema?",
+    "answer": "Subir los breakers del tablero eléctrico que energizan el sistema."
+  },
+  {
+    "question": "¿Cómo se accede a la interfaz web del sistema?",
+    "answer": "Desde un navegador en la red WiFi ingresando a http://192.168.0.140:7000/pintura."
+  },
+  {
+    "question": "¿Qué se debe hacer antes de iniciar el sistema?",
+    "answer": "Verificar que el servidor Flask esté ejecutándose y que el ESP8266 esté alimentado."
+  },
+  {
+    "question": "¿Qué se debe hacer si el sistema no responde?",
+    "answer": "Revisar conexiones eléctricas, alimentación y estado del servidor Flask."
+  },
+  {
+    "question": "¿Cómo se apagan los motores?",
+    "answer": "Detener el sistema desde la interfaz web o enviar el comando /motor/detener."
+  },
+  {
+    "question": "¿Cómo se selecciona un modelo en la interfaz?",
+    "answer": "Desde un menú desplegable en la interfaz web."
+  },
+  {
+    "question": "¿Qué es el Modo Básico?",
+    "answer": "Un modo de operación que permite iniciar y detener el sistema automáticamente."
+  },
+  {
+    "question": "¿Qué es el Modo Avanzado?",
+    "answer": "Un modo de operación que permite controlar manualmente los componentes del sistema."
+  },
+  {
+    "question": "¿Qué es el Modo Test?",
+    "answer": "Un modo para realizar pruebas rápidas de funcionamiento del sistema."
+  },
+  {
+    "question": "¿Qué es un panel de estado?",
+    "answer": "Una sección de la interfaz que muestra información sobre el estado del sistema."
+  },
+  {
+    "question": "¿Qué es un botón de inicio?",
+    "answer": "Un control en la interfaz que inicia el proceso de pintado."
+  },
+  {
+    "question": "¿Qué es un botón de parada?",
+    "answer": "Un control en la interfaz que detiene el proceso de pintado."
+  },
+  {
+    "question": "¿Qué es un botón de prueba?",
+    "answer": "Un control en la interfaz que activa el Modo Test."
+  },
+  {
+    "question": "¿Qué es un botón de modo avanzado?",
+    "answer": "Un control en la interfaz que activa el Modo Avanzado."
+  },
+  {
+    "question": "¿Qué es un botón de modo básico?",
+    "answer": "Un control en la interfaz que activa el Modo Básico."
+  },
+  {
+    "question": "¿Qué es un botón de modo test?",
+    "answer": "Un control en la interfaz que activa el Modo Test."
+  },
+  {
+    "question": "¿Qué es un botón de estado?",
+    "answer": "Un control en la interfaz que muestra el estado actual del sistema."
+  },
+  {
+    "question": "¿Qué es un botón de configuración?",
+    "answer": "Un control en la interfaz que permite ajustar parámetros del sistema."
+  },
+  {
+    "question": "¿Qué es un botón de ayuda?",
+    "answer": "Un control en la interfaz que proporciona información sobre el uso del sistema."
+  },
+  {
+    "question": "¿Qué es un botón de salir?",
+    "answer": "Un control en la interfaz que cierra la aplicación o desconecta al usuario."
+  },
+  {
+    "question": "¿Qué es un botón de reiniciar?",
+    "answer": "Un control en la interfaz que reinicia el sistema o la aplicación."
+  },
+  {
+    "question": "¿Qué es un botón de guardar?",
+    "answer": "Un control en la interfaz que guarda configuraciones o datos."
+  },
+  {
+    "question": "¿Qué es un botón de cargar?",
+    "answer": "Un control en la interfaz que carga configuraciones o datos guardados."
+  },
+  {
+    "question": "¿Cómo se inicia el servidor Flask?",
+    "answer": "Navegar a la carpeta del proyecto y ejecutar 'python app.py'."
+  },
+  {
+    "question": "¿Qué modelos se pueden seleccionar en la interfaz?",
+    "answer": "Kaon Equipos, Opentel Equipo, Kaon Carcasa, Opentel Carcasa, Arris Carcasa, LH Carcasa."
+  },
+  {
+    "question": "¿Qué muestra el panel de estado?",
+    "answer": "Estado del sistema, motor, pintura, pistolas y modelo activo."
+  },
+  {
+    "question": "¿Qué acciones permite el Modo Básico?",
+    "answer": "Seleccionar modelo e iniciar/detener el sistema automáticamente."
+  },
+  {
+    "question": "¿Qué permite hacer el Modo Avanzado?",
+    "answer": "Control manual del motor, válvulas negras y transparentes, y pistolas de pintura."
+  },
+  {
+    "question": "¿Para qué sirve el Modo Test?",
+    "answer": "Para hacer pruebas de pintura negra o transparente durante 5 segundos."
+  },
+  {
+    "question": "¿Cuál es la dirección IP del módulo ESP8266?",
+    "answer": "192.168.0.168 en el puerto 80."
+  },
+  {
+    "question": "¿Qué hacer si el sistema no responde?",
+    "answer": "Revisar conexiones eléctricas, alimentación y estado del servidor Flask."
+  },
+  {
+    "question": "¿Cómo se selecciona un modelo en la interfaz?",
+    "answer": "Desde un menú desplegable en la interfaz web."
+  },
+  {
+    "question": "¿Como se detiene el sistema?",
+    "answer": " Se presiona el boton Detener sistema."
+  },
+  {
+    "question": "¿Cómo se activa manualmente el motor?",
+    "answer": "Se presionan los subir, bajar y detener del motor."
+  },
+  {
+    "question": "¿Cómo se abren o cierran las válvulas?",
+    "answer": " Presionando los botones Abrir y cerrar Valvulas."
+  },
+  {
+    "question": "¿Cómo subir o bajar pistolas de pintura?",
+    "answer": "presionando los botones Subir Pistolas,Bajar Pistolas."
+  },
+  {
+    "question": "¿Qué hacer si las válvulas no se abren?",
+    "answer": "Verificar relés, conexiones eléctricas y alimentación."
+  },
+  {
+    "question": "¿Qué hacer si no hay conexión al servidor?",
+    "answer": "Verificar que el servidor Flask esté ejecutándose y que el ESP8266 esté alimentado y conectado."
+  },
+  {
+    "question": "¿Qué mantenimiento diario se recomienda?",
+    "answer": "Limpieza con thinner y verificación de niveles de pintura."
+  },
+  {
+    "question": "¿Cómo actualizar el firmware del Arduino Nano?",
+    "answer": "Conectarlo vía USB a una computadora y usar el IDE de Arduino para cargar el nuevo firmware."
+  },
+  {
+    "question": "¿Cómo se actualiza el ESP8266?",
+    "answer": "Conectarlo vía USB y usar el IDE de Arduino con extensión ESP8266."
+  },
+  {
+    "question": "¿Cómo se actualiza el servidor Flask?",
+    "answer": "Detener el servidor, actualizar archivos y reiniciar."
+  },
+  {
+    "question": "¿Qué tipo de comunicación hay entre los componentes?",
+    "answer": "HTTP entre interfaz y Flask, WebSocket para estados, comunicación serial entre ESP8266 y Arduino."
+  },
+  {
+    "question": "¿Que empresa creo el sistema automatizado de pintura?",
+    "answer": "la empresa Ecoservicio, creado por los tecnicos Camilo Suaza y Jhoel diaz."
+  },
+  {
+    "question": "¿Cómo se calibra la pistola?",
+    "answer": "se debe calibrar girando el paso de pintura que esta detras, tambien se gira el abanico que esta arriba o abajo, y el aire que se regula desde la marma "
+  },
+  {
+    "question": "que tipo de pintura utlizan?",
+    "answer": "se utiliza la pintura negra para maquillar y la pintura transparente para el acabado final"
+  },
+  {
+    "question": "que tipo de pintura manejan?",
+    "answer": "se utiliza la pintura negra para maquillar y la pintura transparente para el acabado final"
+  },
+  {
+    "question": "hola como estas",
+    "answer": "hola, estoy bien gracias, y tu? soy un asistente virtual y estoy aqui para ayudarte con tus preguntas sobre la maquina de pintura"
+  },
+  {
+    "question": "adios",
+    "answer": "adios, que tengas un buen dia, si necesitas algo mas no dudes en preguntar"
+  },
+  {
+    "question": " video explicativo",
+    "answer": "Aquí tienes un video explicativo:<br><video src='/static/interfaz.mp4' controls width='400'></video>"
+  },
+  {
+    "question": "video explicativo de la interfaz",
+    "answer": "Aquí tienes un video explicativo:<br><video src='/static/interfaz.mp4' controls width='400'></video>"
+  },
+  {
+    "question": "Que pinturas se utiliza en el kaon ?",
+    "answer": "en el modelo kaon se utlizan la pintura transparente inicialmente luego la pintura negra y por último de nuevo la pintura transparente"
+  },
+  {
+    "question": "y como funciona",
+    "answer": "el sistema funciona de la siguiente manera: debe estar en linea, luego se debe selecionar el modelo que deseas pintar una vez seleccionado debes presionar el boton iniciar sistema automatico y el empezara pero se debe estar monitoreando los estados"
+  },
+  {
+    "question": "quien es jhoel",
+    "answer": "Jhoel es mi creador, el cual es un ingeniero de sistemas y me ha creado para ayudar a los usuarios a resolver sus dudas y preguntas sobre la interfaz del pintura y otros temas relacionados con pitura."
+  },
+  {
+    "question": "que pitura utiliza kaon",
+    "answer": "El modelo kaon utiliza pintura negra para maquillaje y transparente para acabado final."
+  },
+  {
+    "question": "[la pregunta] Pregunta: y como se pinta el opentel",
+    "answer": "[En el modelo opentel se debe pintar primero negro y luego transparente para cabado fina]"
+  },
+  {
+    "question": "como se pintal el opentel",
+    "answer": "[En el modelo opentel se debe pintar primero negro y luego transparente para cabado fina]"
+  },
+  {
+    "question": "y como se pinta lh",
+    "answer": "el LH se debe pintar de negro y al final se da el acabado con transparente"
+  },
+  {
+    "question": "quien creo la maquina de pintura",
+    "answer": "La maquina de pintura fue creada en la empresa Ecoservicio por los tecnicos Camilo Suaza y Jhoel diaz"
+  },
+  {
+    "question": "como se pinta arris carcasa?",
+    "answer": "La carcasa del arris se debe maquillar con pintura negra y debe tener cuidado con los leds ya luego se empareja con transparente Pregunta: como se pinta arris carcasa?"
+  },
+  {
+    "question": "que hacen el la empresa ecoservicio",
+    "answer": "la empresa ecoservicio se dedica a las soluciones tecnologicas para los diferentes tipos de clientes"
+  }
+]

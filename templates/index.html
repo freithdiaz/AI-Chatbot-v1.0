@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chat IA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00f7ff;
+            --secondary-color: #ff00e4;
+            --dark-bg: #0a0a1a;
+            --darker-bg: #050510;
+            --glass-bg: rgba(15, 15, 35, 0.7);
+            --text-light: #e0e0ff;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(0, 247, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 0, 228, 0.1) 0%, transparent 50%);
+            overflow-x: hidden;
+        }
+        
+        .futuristic-container {
+            width: 95%;
+            max-width: 900px;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 
+                0 0 20px rgba(0, 247, 255, 0.2),
+                0 0 40px rgba(255, 0, 228, 0.1),
+                inset 0 0 15px rgba(255, 255, 255, 0.05);
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 
+                0 0 10px var(--primary-color),
+                0 0 20px var(--primary-color);
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 1rem;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), var(--secondary-color), transparent);
+            border-radius: 100%;
+        }
+        
+        #chat-box {
+            height: 60vh;
+            min-height: 300px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 15px;
+            border-radius: 15px;
+            background: rgba(10, 10, 25, 0.5);
+            border: 1px solid rgba(0, 247, 255, 0.2);
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary-color) transparent;
+        }
+        
+        #chat-box::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        #chat-box::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        #chat-box::-webkit-scrollbar-thumb {
+            background-color: var(--primary-color);
+            border-radius: 10px;
+        }
+        
+        .message {
+            margin: 0;
+            padding: 10px 15px;
+            border-radius: 15px;
+            max-width: 85%;
+            position: relative;
+            font-size: clamp(0.9rem, 3vw, 1.05rem);
+            line-height: 1.4;
+            animation: fadeIn 0.3s ease-out;
+            word-wrap: break-word;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user {
+            background: linear-gradient(135deg, rgba(0, 119, 255, 0.8), rgba(0, 204, 255, 0.8));
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        .bot {
+            background: rgba(30, 30, 60, 0.8);
+            color: var(--text-light);
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-left: 2px solid var(--primary-color);
+        }
+        
+        .bot::before {
+            content: 'AI';
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.6rem;
+            color: var(--primary-color);
+            background: var(--darker-bg);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--primary-color);
+        }
+        
+        .input-group {
+            position: relative;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        #user-input {
+            background: rgba(20, 20, 40, 0.7);
+            border: 1px solid rgba(0, 247, 255, 0.3);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            transition: all 0.3s ease;
+            flex-grow: 1;
+        }
+        
+        #user-input:focus {
+            background: rgba(30, 30, 60, 0.9);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+            outline: none;
+            color: white;
+        }
+        
+        #user-input::placeholder {
+            color: rgba(200, 200, 255, 0.5);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 30px;
+            padding: 0 20px;
+            margin-left: 10px;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+        }
+        
+        .typing-indicator {
+            display: none;
+            align-self: flex-start;
+            background: rgba(30, 30, 60, 0.8);
+            padding: 8px 12px;
+            border-radius: 15px;
+            margin-bottom: 8px;
+            border-bottom-left-radius: 5px;
+            border-left: 2px solid var(--primary-color);
+        }
+        
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+        
+        .typing-dot:nth-child(1) { animation-delay: 0s; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typingAnimation {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.6; }
+            30% { transform: translateY(-3px); opacity: 1; }
+        }
+        
+        /* Efectos de partículas futuristas */
+        .particle {
+            position: absolute;
+            background: rgba(0, 247, 255, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            .futuristic-container {
+                padding: 1rem;
+                margin: 0.5rem auto;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+            
+            #chat-box {
+                height: 55vh;
+                padding: 10px;
+                gap: 8px;
+            }
+            
+            .message {
+                max-width: 90%;
+                padding: 8px 12px;
+                font-size: 0.95rem;
+            }
+            
+            .bot::before {
+                left: -20px;
+                width: 16px;
+                height: 16px;
+                font-size: 0.5rem;
+            }
+            
+            #user-input {
+                padding: 8px 12px;
+            }
+            
+            .btn-primary {
+                padding: 0 15px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .futuristic-container {
+                width: 98%;
+                padding: 0.8rem;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+                padding-bottom: 0.5rem;
+            }
+            
+            #chat-box {
+                height: 50vh;
+                min-height: 250px;
+            }
+            
+            .message {
+                max-width: 95%;
+                font-size: 0.9rem;
+            }
+            
+            .btn-primary {
+                margin-left: 5px;
+                padding: 0 12px;
+            }
+        }
+        
+        /* Animación de flotación para partículas */
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(5px, 5px); }
+            50% { transform: translate(10px, 0); }
+            75% { transform: translate(5px, -5px); }
+        }
+
+        .pending-question {
+            background: rgba(255, 193, 7, 0.2);
+            border-left: 3px solid #ffc107;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .suggested-questions {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(0, 123, 255, 0.1);
+            border-radius: 5px;
+            border-left: 3px solid #007bff;
+        }
+
+        .suggested-question {
+            cursor: pointer;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            background: rgba(0, 123, 255, 0.1);
+            transition: background 0.3s;
+        }
+
+        .suggested-question:hover {
+            background: rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="futuristic-container">
+        <img src="{{ url_for('static', filename='imagen.png') }}" alt="Logo del Sistema" style="max-width: min(200px, 50vw); height: auto;" class="mx-auto d-block mb-3">
+        <h1>Chat Inteligente</h1>
+       
+        <div id="chat-box" class="d-flex flex-column">
+            <div class="message bot">Hola, soy ECO tu asistente de IA para despejar dudas sobre el proceso de pintura automatica. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <div class="input-group">
+            <input type="text" id="user-input" class="form-control" placeholder="Escribe tu mensaje..." autocomplete="off">
+            <button class="btn btn-primary" onclick="sendMessage()">ENVIAR</button>
+        </div>
+        <div id="typing-indicator" class="typing-indicator">
+            <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        const socket = io();
+        
+        // Efecto de partículas optimizado para móviles
+        function createParticles() {
+            const container = document.querySelector('.futuristic-container');
+            const particleCount = window.innerWidth < 768 ? 10 : 15;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Tamaño y posición aleatorios
+                const size = Math.random() * 2 + 1;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                
+                // Animación más ligera para móviles
+                const duration = Math.random() * 15 + 5;
+                particle.style.animation = `float ${duration}s infinite ease-in-out`;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // Crear partículas al cargar
+        window.addEventListener('load', createParticles);
+
+        // Manejar el teclado virtual en móviles
+        document.getElementById("user-input").addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Ajustar altura del chat cuando el teclado aparece en móviles
+        window.addEventListener('resize', function() {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.scrollTop = chatBox.scrollHeight;
+        });
+
+        async function sendMessage() {
+            const input = document.getElementById("user-input");
+            const message = input.value.trim();
+            if (!message) return;
+
+            // Ocultar teclado virtual en móviles después de enviar
+            input.blur();
+            
+            const chatBox = document.getElementById("chat-box");
+            const userMessage = document.createElement("div");
+            userMessage.className = "message user";
+            userMessage.innerText = message;
+            chatBox.appendChild(userMessage);
+            input.value = "";
+            
+            // Mostrar indicador de typing
+            const typingIndicator = document.getElementById("typing-indicator");
+            typingIndicator.style.display = 'flex';
+            
+            // Scroll al final del chat
+            chatBox.scrollTop = chatBox.scrollHeight;
+            
+            // Enviar mensaje con un pequeño retraso
+            setTimeout(() => {
+                socket.send(message);
+            }, 300);
+        }
+
+        socket.on('message', function(response) {
+            // Ocultar indicador de typing
+            document.getElementById("typing-indicator").style.display = 'none';
+            
+            const chatBox = document.getElementById("chat-box");
+            const botMessage = document.createElement("div");
+            botMessage.className = "message bot";
+            
+            // Verificar si la respuesta contiene una pregunta pendiente
+            if (response.includes("¿Te gustaría proporcionar una respuesta para esta pregunta?")) {
+                const questionDiv = document.createElement("div");
+                questionDiv.className = "pending-question";
+                questionDiv.innerHTML = response;
+                chatBox.appendChild(questionDiv);
+            } else {
+                // Formatear respuesta con saltos de línea
+                botMessage.innerHTML = response.replace(/\n/g, '<br>');
+                chatBox.appendChild(botMessage);
+            }
+            
+            chatBox.scrollTop = chatBox.scrollHeight;
+        });
+        
+        // Enfocar el input al cargar la página
+        window.addEventListener('load', function() {
+            document.getElementById('user-input').focus();
+        });
+
+        // Función para sugerir preguntas similares
+        function suggestSimilarQuestions(question) {
+            const chatBox = document.getElementById("chat-box");
+            const suggestionsDiv = document.createElement("div");
+            suggestionsDiv.className = "suggested-questions";
+            suggestionsDiv.innerHTML = "<strong>¿Quizás quisiste decir?</strong>";
+            
+            // Aquí podrías hacer una llamada al servidor para obtener sugerencias
+            // Por ahora solo mostramos un mensaje genérico
+            const suggestion = document.createElement("div");
+            suggestion.className = "suggested-question";
+            suggestion.innerText = "¿Podrías reformular tu pregunta?";
+            suggestion.onclick = function() {
+                document.getElementById("user-input").value = this.innerText;
+            };
+            suggestionsDiv.appendChild(suggestion);
+            
+            chatBox.appendChild(suggestionsDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

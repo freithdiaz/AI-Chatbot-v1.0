@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asistente Técnico</title>
+  <style>
+    body { font-family: Arial; background: #f2f2f2; padding: 20px; }
+    #chatbox { background: white; border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; }
+    .user { font-weight: bold; }
+    .bot { color: green; }
+    input, button { padding: 10px; margin-top: 10px; width: 100%; }
+  </style>
+</head>
+<body>
+  <h2>Asistente Técnico de Pintura</h2>
+  <div id="chatbox"></div>
+  <input id="question" placeholder="Escribe tu pregunta...">
+  <button onclick="sendQuestion()">Enviar</button>
+
+  <script>
+    function sendQuestion() {
+      const input = document.getElementById("question");
+      const question = input.value;
+      const chat = document.getElementById("chatbox");
+      chat.innerHTML += `<div class='user'>Tú: ${question}</div>`;
+      input.value = "";
+      fetch("/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: question })
+      }).then(res => res.json())
+        .then(data => {
+          chat.innerHTML += `<div class='bot'>Asistente: ${data.answer}</div>`;
+          chat.scrollTop = chat.scrollHeight;
+        });
+    }
+  </script>
+</body>
+</html>

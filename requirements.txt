@@ -1,0 +1,10 @@
+flask==2.0.1
+flask-cors==3.0.10
+flask-socketio==5.1.1
+sentence-transformers==2.2.2
+torch==1.9.0
+pyspellchecker==0.6.3
+spacy==3.2.0
+python-socketio==5.4.0
+python-engineio==4.2.1
+werkzeug==2.0.1 
